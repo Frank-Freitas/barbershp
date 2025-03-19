@@ -1,0 +1,64 @@
+
+
+ JJWT (Java JWT) → Para gerar tokens JWT (caso não use outra lib JWT)
+
+ MapStruct → Para conversão entre DTOs e entidades
+ 
+ Springdoc OpenAPI 
+
+
+com.barbearia.app
+│── application
+│   ├── controller
+│   │   ├── BarbeiroController.java
+│   │   ├── AgendamentoController.java
+│   │   ├── ServicoController.java
+│   │   ├── UsuarioController.java
+│   │   └── AutenticacaoController.java
+│   ├── dto
+│   │   ├── AgendamentoDTO.java
+│   │   ├── UsuarioDTO.java
+│   │   └── RequisicaoAutenticacaoDTO.java
+│   ├── mapper
+│   │   ├── AgendamentoMapper.java
+│   │   ├── UsuarioMapper.java
+│   │   └── ServicoMapper.java
+│   └── service
+│       ├── BarbeiroService.java
+│       ├── AgendamentoService.java
+│       ├── ServicoService.java
+│       ├── UsuarioService.java
+│       └── AutenticacaoService.java
+│
+│── domain
+│   ├── entity
+│   │   ├── Barbeiro.java
+│   │   ├── Agendamento.java
+│   │   ├── Servico.java
+│   │   ├── Usuario.java
+│   │   ├── enums
+│   │   │   ├── StatusAgendamento.java
+│   │   │   ├── TipoServico.java
+│   │   │   └── TipoUsuario.java
+│   ├── repository
+│   │   ├── BarbeiroRepository.java
+│   │   ├── AgendamentoRepository.java
+│   │   ├── ServicoRepository.java
+│   │   ├── UsuarioRepository.java
+│   │   └── AutenticacaoRepository.java
+│
+│── infrastructure
+│   ├── security
+│   │   ├── JwtUtil.java
+│   │   ├── JwtFilter.java
+│   │   ├── SecurityConfig.java
+│   ├── exception
+│   │   ├── GlobalExceptionHandler.java
+│   │   ├── AgendamentoNotFoundException.java
+│   │   ├── UsuarioNotFoundException.java
+│   ├── config
+│   │   ├── CorsConfig.java
+│   │   ├── SwaggerConfig.java
+│
+│── BarbeariaApplication.java
+
