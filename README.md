@@ -26,6 +26,9 @@ API RESTful para gerenciamento de agendamentos e serviços de uma barbearia. Est
 - Lombok
 - H2 Database (para testes)
 - Maven
+- Spring Tools Suite 4 Extension (Eclipse IDE)
+- Swagger (para testes e documentação da API)
+- Postman
 
 ---
 
